@@ -23,6 +23,13 @@ you should place your code here."
   )
 
 
+  ;; Enable RSS
+  (setq org-feed-alist
+    '(("Jira"
+        "https://code.bestbuy.com/jira/activity?maxResults=10&streams=key+IS+DMA&os_authType=basic&title=undefined"
+        "~/Org/projects/todo.org" "RSS")
+    ))
+
   ;; Enable Caputre Templates
 
   (define-key global-map "\C-cc" 'org-capture)
